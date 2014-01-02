@@ -1,7 +1,8 @@
 <?php
 
-class CategoryTableSeeder extends Seeder {
-
+class CategoryTableSeeder
+extends Seeder
+{
     public function run()
     {
         DB::table("category")->truncate();

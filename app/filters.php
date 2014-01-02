@@ -78,3 +78,13 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+// Route::filter("auth", function()
+// {
+//     // ...get database user
+
+//     if (Input::server("token") !== $user->token)
+//     {
+//         App::abort(400, "Invalid token");
+//     }
+// });

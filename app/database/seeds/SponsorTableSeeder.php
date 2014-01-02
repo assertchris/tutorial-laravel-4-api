@@ -1,7 +1,8 @@
 <?php
 
-class SponsorTableSeeder extends Seeder {
-
+class SponsorTableSeeder
+extends Seeder
+{
     public function run()
     {
         DB::table("sponsor")->truncate();
