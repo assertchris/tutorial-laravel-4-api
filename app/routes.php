@@ -16,8 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-// Route::group(["before" => "auth"], function()
-// {
+Route::group(["before" => "auth"], function()
+{
     Route::model("event", "Event");
 
     Route::get("event", [
@@ -54,4 +54,4 @@ Route::get('/', function()
         "as"   => "event/destroy",
         "uses" => "EventController@destroy"
     ]);
-// });
+});
